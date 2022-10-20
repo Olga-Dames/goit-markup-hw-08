@@ -1,12 +1,12 @@
 .team__section {
-  padding-top: 94px;
+  // padding-top: 94px;
   text-align: center;
   background-color: $button-bg;
 }
 
 .team__list {
   @extend %list;
-  display: flex;
+  // display: flex;
   padding-top: 0;
 }
 
@@ -17,10 +17,20 @@
   border-radius: 0px 0px 4px 4px;
   background-color: $white-text-color;
 
-&:not(:last-child) {
-  margin-right: 30px;
-  }
+// &:not(:last-child) {
+//   margin-right: 30px;
+//   }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
 }
+
+// temporary measures
+.team__card img {
+  width: 450px;
+  height: 460px;
+}
+
 
 .team__position {
   margin-bottom:16px;
@@ -31,8 +41,8 @@
 }
 
 .team__box {
-  padding: 30px 32px;
-
+  // padding: 30px 32px;
+  padding: 30px 24px;
 }
 
 .team__member-name {

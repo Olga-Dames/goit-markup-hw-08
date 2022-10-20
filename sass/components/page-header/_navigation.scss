@@ -1,19 +1,25 @@
+.navigation {
+  margin-bottom: 300px;
+}
 .navigation__list {
   @extend %list;
-  display: flex;
 }
 
 .navigation__item:not(:last-child) {
-  margin-right: 50px;
+  // margin-right: 50px;
+  margin-bottom: 32px;
+
 }
 
 .navigation__link {
   display: block;
+  font-family: $primary-font;
   color: $primary-test-color;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  font-size: 40px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms $cubic;
@@ -21,21 +27,22 @@
 &:hover,
 &:focus {
   color: $accent-color;
-}
+  }
 
 &--current {
-  position: relative;
+  // position: relative;
   color: $accent-color;
-}
-
-&--current::after {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: $accent-color;
-  border-radius: 2px;
   }
 }
+
+// &--current::after {
+//   display: block;
+//   position: absolute;
+//   bottom: 0;
+//   content: "";
+//   height: 4px;
+//   width: 100%;
+//   background-color: $accent-color;
+//   border-radius: 2px;
+//   }
+// }

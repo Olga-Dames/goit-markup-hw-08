@@ -1,10 +1,10 @@
-.section__features {
-  padding-bottom: 0;
-}
+// .section__features {
+//   padding-bottom: 0;
+// }
 
 .features__list {
   @extend %list;
-  display: flex;
+  // display: flex;
 }
 .features__title {
   margin-bottom: 10px;
@@ -12,11 +12,12 @@
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
-  }
+// .features__item:not(:last-child) {
+//   margin-right: 30px;
+//   }
 
 .features__descr {
   min-width: 270px;

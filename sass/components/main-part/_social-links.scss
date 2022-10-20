@@ -20,12 +20,12 @@
   padding: 12px;
   border-radius: 50%;
   color: $icon-color;
-  transition: background-color 250ms $cubic,
-    color 250ms $cubic;
+  // transition: background-color 250ms $cubic,
+  //   color 250ms $cubic;
 
-&:hover,
-&:focus {
-  background-color: $accent-color;
-  color: $white-text-color;
-  }
+// &:hover,
+// &:focus {
+//   background-color: $accent-color;
+//   color: $white-text-color;
+//   }
 }
