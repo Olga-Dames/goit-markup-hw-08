@@ -1,30 +1,65 @@
 
 .menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
   padding: 0;
   margin: 0;
   border: none;
   background-color: transparent;
+  color: $primary-test-color;
+  cursor: pointer;
+  transition: color 250ms $cubic;
 
-// &.mobile-button_close {
-//   display: none;
-//   }
-// &.is-open .mobile-button_close {
-//   display: block;
-//   }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 
-// &.is-open .mobile-button_open {
-//   display: none;
-//   }
+  @media screen and (min-width: 768px) {
+  & {
+    display: none;
+    }
+  }
+}
+.menu-toggle_icon {
+  fill: currentColor;
 }
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 48px 40px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
-              0px 2px 4px rgba(0, 0, 0, 0.08), 
-              0px 1px 3px rgba(0, 0, 0, 0.16);
+  &.is-open {
+    transform: translateX(0);
+  }
+  @media screen and (max-width:767px) {
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 300px;
+    padding: 48px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+                0px 2px 4px rgba(0, 0, 0, 0.08),
+                0px 1px 3px rgba(0, 0, 0, 0.16);
+    transition: transform 250ms ease-in-out;
+    z-index: 999;
+  }
+
+  @media screen and (min-width:$tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 96px;
+    }
+    @media screen and (min-width:$desktop) {
+      gap: 315px;
+    }
 }
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top:10px;
+  right: 15px;
+  }

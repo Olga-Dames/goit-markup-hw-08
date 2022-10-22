@@ -1,29 +1,34 @@
 .activity-section {
+@media screen and (max-width:1199px) {
   display: none;
 }
-// .activity__list {
-//   @extend %list;
-//   display: flex;
-// }
-// .activity__item {
-//   position: relative;
+@media screen and (min-width:$desktop) {
+  padding: 94px 0;
+}
+}
+.activity__list {
+  @extend %list;
+  display: flex;
+}
+.activity__item {
+  position: relative;
 
-// &:not(:last-child) {
-//   margin-right: 30px;
-//   }
-// }
+&:not(:last-child) {
+  margin-right: 30px;
+  }
+}
 
-// .activity__overlay {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   height: 70px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: $overlay-color;
-//   color: $white-text-color;
-//   font-weight: 700;
-//   line-height: 1.14;
-//   text-transform: uppercase;
-// }
+.activity__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $overlay-color;
+  color: $white-text-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

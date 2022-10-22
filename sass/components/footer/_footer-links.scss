@@ -1,0 +1,40 @@
+.footer-contacts__heading {
+  margin-bottom: 20px;
+  color: $white-text-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-contacts__list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-contacts__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-contacts__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms $cubic;
+
+&:hover,
+&:focus {
+  background-color: $accent-color;
+  border-radius: 50%;
+  }
+}
+
+.footer-contacts__icon {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: $white-text-color;
+}

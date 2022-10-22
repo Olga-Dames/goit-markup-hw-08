@@ -1,0 +1,30 @@
+.address__list {
+  @extend %list;
+}
+.address__item {
+  margin-top: 0;
+  // margin-bottom: 9px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+
+&--last {
+  margin-bottom: 0px;
+  }
+}
+
+.address__link {
+  color: $address-text-color;
+  text-decoration: none;
+  transition: color 250ms $cubic;
+
+&:hover,
+&:focus {
+  color: $white-text-color;
+}
+
+&--location {
+  color: $white-text-color;
+}
+}

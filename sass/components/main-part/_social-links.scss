@@ -20,12 +20,15 @@
   padding: 12px;
   border-radius: 50%;
   color: $icon-color;
-  // transition: background-color 250ms $cubic,
-  //   color 250ms $cubic;
 
-// &:hover,
-// &:focus {
-//   background-color: $accent-color;
-//   color: $white-text-color;
-//   }
+@media screen and (min-width:$desktop) {
+  transition: background-color 250ms $cubic,
+              color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+      background-color: $accent-color;
+      color: $white-text-color;
+      }
+  }
 }

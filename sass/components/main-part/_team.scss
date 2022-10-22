@@ -1,13 +1,17 @@
 .team__section {
-  // padding-top: 94px;
   text-align: center;
   background-color: $button-bg;
 }
 
 .team__list {
   @extend %list;
-  // display: flex;
   padding-top: 0;
+
+  @media screen and (min-width:$tablet) {
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px
+  }
 }
 
 .team__card {
@@ -17,32 +21,32 @@
   border-radius: 0px 0px 4px 4px;
   background-color: $white-text-color;
 
-// &:not(:last-child) {
-//   margin-right: 30px;
-//   }
+@media screen and (max-width:767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
-}
+  }
+@media screen and (min-width:$tablet) {
+  width: calc((100% - 30px)/2);
+  }
 
-// temporary measures
-.team__card img {
-  width: 450px;
-  height: 460px;
+@media screen and (min-width:$desktop) {
+    width: 270px;
+    }
 }
-
 
 .team__position {
   margin-bottom:16px;
   color: $secondary-text-color;
-  line-height: 1.71;
   font-size: 16px;
   line-height: 1.19
 }
 
 .team__box {
-  // padding: 30px 32px;
-  padding: 30px 24px;
+  padding: 30px 0 24px;
+@media screen and (min-width:$desktop) {
+  padding: 30px 32px;
+  }
 }
 
 .team__member-name {

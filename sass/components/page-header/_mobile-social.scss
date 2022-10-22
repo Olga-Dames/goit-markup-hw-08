@@ -1,7 +1,12 @@
 .mobile-social {
   @extend %list;
   display: flex;
-}
+
+  @media  screen and (min-width: 768px) {
+    display:none;
+    }  
+  }
+
 
 .mobile-social__item:not(:last-child) {
   margin-right: 10px;
