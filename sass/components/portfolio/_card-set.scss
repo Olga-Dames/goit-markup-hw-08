@@ -39,13 +39,8 @@
 
 &__meta-container {
     padding: 20px 24px;
+    flex-grow: 1;
   }
-
-@media screen and (min-width:$tablet) and (max-width:1199px) {
-&__meta-container--first {
-  height: 146px;
-  }
-}
 
 &__meta-heading {
   margin-bottom: 4px;
@@ -81,12 +76,14 @@
 }
 
 .card-set__link {
-  display: block;
+  display: flex;
   text-decoration: none;
   color: $primary-test-color;
   background: $white-text-color;
   border: 1px solid #EEEEEE;
   transition: box-shadow 250ms $cubic;
+  flex-direction: column;
+  height: 100%;
 
 &:hover,
 &:focus {
