@@ -41,8 +41,10 @@
     padding: 20px 24px;
   }
 
+@media screen and (min-width:$tablet) and (max-width:1199px) {
 &__meta-container--first {
-  padding-bottom: 56px;
+  height: 146px;
+  }
 }
 
 &__meta-heading {

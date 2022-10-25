@@ -43,6 +43,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
+
+@media screen and (min-width:$tablet) {
+    text-align: left;
+}
 }
 .features__descr {
   color: $secondary-text-color;
